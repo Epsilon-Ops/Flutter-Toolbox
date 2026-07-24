@@ -8,6 +8,18 @@ Calculatrice
 + conversions
 + calculs personnalisés
 
+====
+
+Flutter Toolbox - idées
+
+[x] Calculatrice
+[ ] Convertisseur de devises
+[ ] Budget familial
+[ ] Suivi habitudes
+[ ] Scanner documents
+[ ] Gestion inventaire
+[ ] Analyse dépenses IA
+
 Ensuite on apprendra quelque chose de très important :
 
 Une application utile doit retenir des choses.
