@@ -1,0 +1,31 @@
+Calculatrice
+
++ additions
++ soustractions
++ multiplications
++ divisions
++ historique
++ conversions
++ calculs personnalisés
+
+Ensuite on apprendra quelque chose de très important :
+
+Une application utile doit retenir des choses.
+
+On ajoutera :
+
+sauvegarde locale ;
+paramètres ;
+préférences utilisateur.
+
+Par exemple :
+
+Budget
+
+12 juillet
+Restaurant       -25€
+
+13 juillet
+Courses          -42€
+
+Même après fermeture de l'application, les données restent.
