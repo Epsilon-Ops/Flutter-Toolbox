@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/toolbox_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,9 +11,26 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter Toolbox'),
       ),
       body: const Center(
-        child: Text(
-          'Bienvenue dans la boite à outils Flutter !',
-        ),
+        child: Column(
+                children: [
+                  ToolboxCard(
+                    title: "Calculatrice",
+                    icon: Icons.calculate,
+                  ),
+                  ToolboxCard(
+                    title: "Budget",
+                    icon: Icons.euro,
+                  ),
+                  ToolboxCard(
+                    title: "Notes",
+                    icon: Icons.note,
+                  ),
+                  ToolboxCard(
+                    title: "Paramètres",
+                    icon: Icons.settings,
+                  ),
+                ],
+              ),
       ),
     );
   }
