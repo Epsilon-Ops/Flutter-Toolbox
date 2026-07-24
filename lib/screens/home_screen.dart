@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/toolbox_card.dart';
+import '../widgets/toolbox_tile.dart';
 import '../features/calculator/calculator_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,37 +12,43 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Flutter Toolbox'),
       ),
       body: Center(
-        child: Column(
+        child: GridView.count(
+          crossAxisCount: 2,
+          padding: const EdgeInsets.all(20),
           children: [
-            ToolboxCard(
-              title: "Calculatrice",
+            
+            ToolboxTile(
+              title:"Calculatrice",
               icon: Icons.calculate,
               onTap: () {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const CalculatorScreen(),
+                    builder: (context) => const CalculatorScreen()
                   ),
                 );
               },
             ),
-            ToolboxCard(
-              title: "Budget",
+
+            ToolboxTile(
+              title:"Budget",
               icon: Icons.euro,
               onTap: () {},
             ),
-            ToolboxCard(
-              title: "Notes",
+
+            ToolboxTile(
+              title:"Notes",
               icon: Icons.note,
               onTap: () {},
             ),
-            ToolboxCard(
-              title: "Paramètres",
+
+            ToolboxTile(
+              title:"Paramètres",
               icon: Icons.settings,
               onTap: () {},
             ),
-          ],
-        ),
+          ]
+        )
       ),
     );
   }
