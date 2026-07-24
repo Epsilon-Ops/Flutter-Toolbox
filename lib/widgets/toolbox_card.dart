@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 class ToolboxCard extends StatelessWidget {
   final String title;
   final IconData icon;
+  final VoidCallback? onTap;
 
   const ToolboxCard({
     super.key,
     required this.title,
     required this.icon,
+    required this.onTap,
   });
 
   @override
@@ -17,6 +19,7 @@ class ToolboxCard extends StatelessWidget {
         leading: Icon(icon),
         title: Text(title),
         trailing: const Icon(Icons.arrow_forward_ios),
+        onTap: onTap,
       ),
     );
   }
